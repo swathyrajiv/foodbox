@@ -30,6 +30,7 @@ div {
 <img src="/images/img3.jpeg" height="200" width="600">
 <br>
 <span>${success}</span><br>
+<br>
 enter cuizine name: &ensp;&ensp;<input type  = "text" name = "cuizineName" required><br>
 <br>
 enter cuizine type&ensp;&ensp;&ensp;<input type  = "text" name = "cuizineType" required><br>

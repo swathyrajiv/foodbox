@@ -6,39 +6,64 @@
 <meta charset="UTF-8">
 <title>Change password</title>
 <style>
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
-h2{
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
 div {
-  border: white;
-  background-color: white;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 80px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 </style>
 </head>
 <body>
+<div>
 <form action="/changepasswordedit" method = "post">
 <h1>food box ... Welcome to food box</h1>
-Enter user name&ensp;&ensp;&ensp;<input type  = "text" name = "userName"  required><br>
+
+<label for="fname">First Name</label>
+    <input type="text" id="userName" name = "userName" placeholder="username">
+<label for="password">password</label><br>
+<input type  = "password" name = "password" placeholder = "password" required><br>
 <br>
-Enter password&ensp;&ensp;&ensp;&nbsp;<input type  = "password" name = "password"  required><br>
-<br>
-Confirm password&ensp;<input type  = "password" name = "cpassword"   required><br>
+<label for="password">Confirm password</label>
+<br><input type  = "password" name = "cpassword"  placeholder = "password"   required><br>
+
 <input type = "submit" name = "submit" value = "click to update">
-<div>
-</div>
-<div>
-</div>
-<div>
-</div>
+<img src="/images/changepassword.jpeg "height=200 width =400 align="middle"> <br>
 Copyright &copy; 2021 Food Box
 </form>
+</div>
 </body>
 </html>
