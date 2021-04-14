@@ -11,6 +11,7 @@
 	<groupId>com.w.simplilearn</groupId>
 	<artifactId>third-phase</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<!-- <packaging>war</packaging> -->
 	<name>third-phase</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -26,7 +27,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
-			<version>2.3.0.RELEASE</version>
+			<version>2.3.0.RELEASE</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -51,7 +52,7 @@
 <dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.15</version>
+			<version>8.0.15</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>

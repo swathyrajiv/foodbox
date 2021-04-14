@@ -33,6 +33,18 @@ public ModelAndView homeView() {
 	modelAndView.setViewName("userhome");
 	return modelAndView;
 }
+@RequestMapping(value ="/aboutus")
+public ModelAndView aboutus() {
+	ModelAndView modelAndView = new ModelAndView();
+	modelAndView.setViewName("aboutus");
+	return modelAndView;
+}
+@RequestMapping(value ="/contactus")
+public ModelAndView contactus() {
+	ModelAndView modelAndView = new ModelAndView();
+	modelAndView.setViewName("contactus");
+	return modelAndView;
+}
 @RequestMapping(value = "/usersearch",method = RequestMethod.POST)
 public ModelAndView getFood(Cuizine cuizine) {
 	String search_key = null;
