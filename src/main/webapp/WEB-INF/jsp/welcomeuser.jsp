@@ -181,9 +181,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
-<%@ include file="header.html" %>
-Welcome <span>${username}</span>
 
+Welcome <span>${username}</span>
+<br>
+<br>
+<%@ include file="header.html" %>
+<br>
 <br>
 <form action="/searchfood"method ="post">
 <input type="submit" name ="search" value = "menu">

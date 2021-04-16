@@ -51,8 +51,8 @@ Welcome to payment page You can pay here
 <br>
 
 <br>
-
-           please enter your details for paying
+<form action="/paymentsubmit" method = "post">
+  please enter your details for paying
            <div></div>
            Name as in your card&nbsp;<input type = "text" name = "name" required><br>
 <br>
@@ -66,6 +66,8 @@ cvv &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "text" n
 <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href = "/paymentsubmit"> click on this link to pay</a>
+<input type ="submit" name = submit value = "click here to pay">
+</form>
 Copyright &copy; 2021 Food Box
             
              

@@ -28,6 +28,7 @@ div {
 <h2>payment successful</h2>
 <h3> placed your order successfully....</h3>
 <h3>Thank you for using our app....</h3>
+<img src="/images/thankyou.jpeg "height=400 width =400 align="middle"> <br>
 <div></div>
 <div></div>
 <div></div>
