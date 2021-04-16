@@ -65,8 +65,7 @@ public ModelAndView getFood(Cuizine cuizine) {
 }
 @RequestMapping(value = "/searchfood",method = RequestMethod.POST)
 public ModelAndView getFoodList(Cuizine cuizine) {
-//	String search_key = null;
-//	search_key =cuizine.getCuizineName();
+
 	
 	List<Cuizine> cuizineList = new ArrayList<>();
 	cuizineList = getFoodAll();

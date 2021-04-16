@@ -74,73 +74,12 @@ public class AdminDao  {
 		
 	}
 
-//	public List<Shoes> getSelShoe(int id) {
-//		
-//			String qry = "select brandname,size,color,type ,price from addshoes where product_id = ?";
-//			@SuppressWarnings("deprecation")
-//			List<Shoes>shoe =jdbcTemplate.query(qry,new Object[] {id},new RowMapper<Shoes>() {
-//				public Shoes mapRow(ResultSet rs, int rowNum) throws SQLException{
-//					Shoes c = new Shoes();
-//					c.setBrandName(rs.getString("brandname"));
-//					c.setSize(rs.getString("size"));
-//		            c.setColor(rs.getString("color"));
-//		            c.setType(rs.getString("type"));
-//		            c.setPrice(rs.getBigDecimal("price"));
-//		            return c;
-//				}
-//			});
-//		return shoe;
-//	}
-//
-//	public int updatePurchase(String username, String address, String emailid, String phoneno, String color, String brandname, String type,String size,LocalDate date,BigDecimal price) {
-//		String qry = "insert into purchase_history(username,address,email,phone_no,product_type,product_size,product_color,brand,date,price)values('"+username+"','"+address+"','"+emailid+"','"+phoneno+"','"+type+"','"+size+"','"+color+"','"+brandname+"','"+date+"','"+price+"')";
-//		 
-//		 return jdbcTemplate.update(qry);
-//	}
-//
-//
-//
+
 	public int updateup(String userName, String password) {
 		String qry = "update admin set admin_id = ?,password = ? ";
 		return jdbcTemplate.update(qry,userName,password);
 	}
-//
-//	public List<Shoes> fetchDateHistory(String daten) {
-//		String qry = "select product_type,product_size,product_color,brand,price from purchase_history where date =?";
-//		@SuppressWarnings("deprecation")
-//		List<Shoes>shoe =jdbcTemplate.query(qry,new Object[] {daten},new RowMapper<Shoes>() {
-//			public Shoes mapRow(ResultSet rs, int rowNum) throws SQLException{
-//				Shoes c = new Shoes();
-//				c.setBrandName(rs.getString("brand"));
-//				c.setSize(rs.getString("product_size"));
-//	            c.setColor(rs.getString("product_color"));
-//	            c.setType(rs.getString("product_type"));
-//	            c.setPrice(rs.getBigDecimal("price"));
-//	            return c;
-//			}
-//		});
-//		System.out.println(shoe);
-//	return shoe;
-//	
-//	}
-//
-//
-//
-//	public List<User> fetchDateHistory2(String daten) {
-//		String qry = "select username, address,email , phone_no from purchase_history where date = ?";
-//		@SuppressWarnings("deprecation")
-//		List<User>user =jdbcTemplate.query(qry,new Object[] {daten},new RowMapper<User>() {
-//			public User mapRow(ResultSet rs, int rowNum) throws SQLException{
-//				User c = new User();
-//				c.setUsername(rs.getString("username"));
-//				c.setAddress(rs.getString("address"));
-//	            c.setEmailid(rs.getString("email"));
-//	            c.setPhoneno(rs.getString("phone_no"));
-//	            return c;
-//			}
-//		});
-//	return user;
-//	}
+
 //
 
 	public List<Cuizine> fetchCuizineDetails(String editCuizine) {
@@ -165,7 +104,7 @@ public class AdminDao  {
 
 	public int updateCuizineFn(String cuizineName,String cuizineType,String vegornonveg,String vegan,BigDecimal price,int updateCuizId) {
 		String qry = "update addShoes set cuizineName = '"+cuizineName+"', cuizineType = '"+cuizineType+"',vegornonveg = '"+vegornonveg+"',vegan = '"+vegan+"',price = '"+price+"' where product_id='"+updateCuizId+"' ";
-		  //name='"+e.getName()+"',salary='"+e.getSalary()+"' where id='"+e.getId()+"' ";  
+		  
 		return jdbcTemplate.update(qry);
 	}
 
@@ -271,16 +210,5 @@ public class AdminDao  {
 
 
 
-//	public List<User> selectuserid(String username, String password) {
-//		String qry = "select userid from user where username = ? and password =?";
-//		@SuppressWarnings("deprecation")
-//		List<User>user = jdbcTemplate.query(qry,new Object[] {username,password}, new RowMapper<User>() {
-//			public User mapRow(ResultSet rs, int rowNum)throws SQLException{
-//				User user = new User();
-//				user.setUserId(rs.getString("userid"));
-//				return user;
-//			}
-//		});
-//		return user;
-//	}
+
 }

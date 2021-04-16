@@ -16,7 +16,7 @@ import com.w.simplilearn.thirdphase.Cuizine;
 import com.w.simplilearn.thirdphase.User;
 import com.w.simplilearn.thirdphase.service.AdminService;
 @RestController
-//@RequestMapping("/login")
+
 @SessionAttributes()
 public class AdminController {
 	@Autowired
@@ -216,7 +216,7 @@ public int delCuizine(int delCuizineId) {
 	public ModelAndView changePasswordedit(Admin admin) {
 		String userName ;
 		String password;
-		String cpassword;
+		
 		userName = admin.getUserName();
 		password = admin.getPassword();
 		int ret = updateup(userName,password);
@@ -237,41 +237,7 @@ if(ret==1) {
 		return service.updateup(userName,password);
 	}
 	
-	@RequestMapping (value ="/viewpurchasehistory")
-	public ModelAndView viewPurchaseHistory() {
-		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.setViewName("viewpurchase");
-		return modelAndView;
-		
-	}
-//	@RequestMapping(value = "/viewhistory", method = RequestMethod.POST)
-//		public ModelAndView viewHistory(User user, Cuizine cuizine) {
-//		List<Cuizine>updaList = new ArrayList<>();
-//		List<User>updaListUser = new ArrayList<>();
-//		daten = cuizine.getDaten();
-//		updaList =fetchDateHistory(daten);
-//		updaListUser = fetchDateHistory2(daten);
-//		if(updaList.isEmpty()) {
-//			ModelAndView modelAndView = new ModelAndView();
-//			modelAndView.setViewName("invalid");
-//			return modelAndView;
-//		}else {
-//		System.out.println(updaList);
-//			System.out.println(daten);
-//			ModelAndView modelAndView = new ModelAndView();
-//			modelAndView.setViewName("viewhistorypage");
-//			modelAndView.addObject("updalist", updaList);
-//			modelAndView.addObject("updalistuser",updaListUser);
-//			return modelAndView;
-//		}
-//	}
-//	public List<User> fetchDateHistory2(String daten) {
-//		return service.fetchDateHistory2(daten);
-//	}
-//
-//	public List<Cuizine> fetchDateHistory(String daten) {
-//		return service.fetchDateHistory(daten);
-//		
-//	}
+	
+
 	
 }

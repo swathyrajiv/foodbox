@@ -10,7 +10,7 @@
 <body>
 <span>${success}</span>
 <img src ="/images/trash.png" height=200 width =200>
-<a href ="/welcome"> click to go back to welcome page</a>
+<a href ="/log"> click to go back to welcome page</a>
 <a href = "/logout">log out</a>
 </body>
 </html>
